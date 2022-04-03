@@ -1,0 +1,240 @@
+{
+    "general": {
+        "q0": {
+            "name": "Type of family",
+            "options": [
+                {
+                    "val": "Nuclear",
+                    "checked": false
+                },
+                {
+                    "val": "Joint",
+                    "checked": false
+                }
+            ]
+        },
+        "q1": {
+            "name": "Age",
+            "options": [
+                {
+                    "val": "Below 18",
+                    "checked": false
+                },
+                {
+                    "val": "18-25",
+                    "checked": false
+                },
+                {
+                    "val": "26-30",
+                    "checked": false
+                },
+                {
+                    "val": "Above 30",
+                    "checked": false
+                }
+            ]
+        },
+        "q2": {
+            "name": "Gender",
+            "options": [
+                {
+                    "val": "Male",
+                    "checked": false
+                },
+                {
+                    "val": "Female",
+                    "checked": false
+                }
+            ]
+        },
+        "q3": {
+            "name": "Maritial Status",
+            "options": [
+                {
+                    "val": "Married",
+                    "checked": false
+                },
+                {
+                    "val": "Unmarried",
+                    "checked": false
+                },
+                {
+                    "val": "Widowed",
+                    "checked": false
+                },
+                {
+                    "val": "Divorced",
+                    "checked": false
+                }
+            ]
+        },
+        "q4": {
+            "name": "Number of childerns",
+            "options": [
+                {
+                    "val": "0",
+                    "checked": false
+                },
+                {
+                    "val": "1",
+                    "checked": false
+                },
+                {
+                    "val": "2",
+                    "checked": false
+                },
+                {
+                    "val": "3",
+                    "checked": false
+                },
+                {
+                    "val": "more than 3",
+                    "checked": false
+                }
+            ]
+        },
+        "q5": {
+            "name": "Number of girls",
+            "options": [
+                {
+                    "val": "0",
+                    "checked": false
+                },
+                {
+                    "val": "1",
+                    "checked": false
+                },
+                {
+                    "val": "2",
+                    "checked": false
+                },
+                {
+                    "val": "more than 2",
+                    "checked": false
+                }
+            ]
+        },
+        "q6": {
+            "name": "Type of house",
+            "options": [
+                {
+                    "val": "Pucca",
+                    "checked": false
+                },
+                {
+                    "val": "Katcha",
+                    "checked": false
+                },
+                {
+                    "val": "Rebo",
+                    "checked": false
+                },
+                {
+                    "val": "Others",
+                    "checked": false
+                }
+            ]
+        },
+        "q7": {
+            "name": "Access to toilet",
+            "options": [
+                {
+                    "val": "Yes",
+                    "checked": false
+                },
+                {
+                    "val": "No",
+                    "checked": false
+                }
+            ]
+        },
+        "q8": {
+            "name": "Type of toilet",
+            "options": [
+                {
+                    "val": "Dry",
+                    "checked": false
+                },
+                {
+                    "val": "Wet",
+                    "checked": false
+                },
+                {
+                    "val": "Others",
+                    "checked": false
+                }
+            ]
+        },
+        "q9": {
+            "name": "Source of light",
+            "options": [
+                {
+                    "val": "Electricity",
+                    "checked": false
+                },
+                {
+                    "val": "Kerosene",
+                    "checked": false
+                },
+                {
+                    "val": "Solar",
+                    "checked": false
+                },
+                {
+                    "val": "Others",
+                    "checked": false
+                }
+            ]
+        },
+        "q10": {
+            "name": "Source of Cooking",
+            "options": [
+                {
+                    "val": "Electricity",
+                    "checked": false
+                },
+                {
+                    "val": "Gas",
+                    "checked": false
+                },
+                {
+                    "val": "coal",
+                    "checked": false
+                },
+                {
+                    "val": "Charcoal",
+                    "checked": false
+                },
+                {
+                    "val": "Solar",
+                    "checked": false
+                },
+                {
+                    "val": "Others",
+                    "checked": false
+                }
+            ]
+        },
+        "q11": {
+            "name": "Source of drinking",
+            "options": [
+                {
+                    "val": "Hand Pump",
+                    "checked": false
+                },
+                {
+                    "val": "Tap water",
+                    "checked": false
+                },
+                {
+                    "val": "River/ spring/lakes",
+                    "checked": false
+                },
+                {
+                    "val": "Others",
+                    "checked": false
+                }
+            ]
+        }
+    }
+}

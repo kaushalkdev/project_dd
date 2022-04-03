@@ -1,0 +1,174 @@
+{
+    "health": {
+        "q0": {
+            "name": "Diseases",
+            "options": [
+                {
+                    "val": "Cold, fever, cough, malaria, tuberculosis",
+                    "checked": false
+                },
+                {
+                    "val": "Anaemia, pregnancy related",
+                    "checked": false
+                },
+                {
+                    "val": "Diabetes, blood pressure",
+                    "checked": false
+                },
+                {
+                    "val": "Mensuration related",
+                    "checked": false
+                },
+                {
+                    "val": "Others",
+                    "checked": false
+                }
+            ]
+        },
+        "q1": {
+            "name": "Interval btw children",
+            "options": [
+                {
+                    "val": "1 year",
+                    "checked": false
+                },
+                {
+                    "val": "2-3 years",
+                    "checked": false
+                },
+                {
+                    "val": "3-4 years",
+                    "checked": false
+                },
+                {
+                    "val": "> than 4 years",
+                    "checked": false
+                }
+            ]
+        },
+        "q2": {
+            "name": "Place of delivery",
+            "options": [
+                {
+                    "val": "Govt hospital",
+                    "checked": false
+                },
+                {
+                    "val": "Private hospital ",
+                    "checked": false
+                },
+                {
+                    "val": "Home",
+                    "checked": false
+                },
+                {
+                    "val": "Others",
+                    "checked": false
+                }
+            ]
+        },
+        "q3": {
+            "name": "Death of any child?",
+            "options": [
+                {
+                    "val": "Yes",
+                    "checked": false
+                },
+                {
+                    "val": "No",
+                    "checked": false
+                }
+            ]
+        },
+        "q4": {
+            "name": "Consultation with doctors during pregnancy",
+            "options": [
+                {
+                    "val": "Yes",
+                    "checked": false
+                },
+                {
+                    "val": "No",
+                    "checked": false
+                }
+            ]
+        },
+        "q5": {
+            "name": "Medical care received during pregnanacy",
+            "options": [
+                {
+                    "val": "Iron folic tablets",
+                    "checked": false
+                },
+                {
+                    "val": "Ante natal check ups",
+                    "checked": false
+                },
+                {
+                    "val": "Others",
+                    "checked": false
+                }
+            ]
+        },
+        "q6": {
+            "name": "Do you know about family planning methods?",
+            "options": [
+                {
+                    "val": "Yes",
+                    "checked": false
+                },
+                {
+                    "val": "No",
+                    "checked": false
+                }
+            ]
+        },
+        "q7": {
+            "name": "Access to toilet",
+            "options": [
+                {
+                    "val": "Yes",
+                    "checked": false
+                },
+                {
+                    "val": "No",
+                    "checked": false
+                }
+            ]
+        },
+        "q8": {
+            "name": "Do you use any family planning method?",
+            "options": [
+                {
+                    "val": "Yes",
+                    "checked": false
+                },
+                {
+                    "val": "No",
+                    "checked": false
+                } 
+            ]
+        },
+        "q9": {
+            "name": "If yes, which one?",
+            "options": [
+                {
+                    "val": "Copper-T",
+                    "checked": false
+                },
+                {
+                    "val": "Bla-1",
+                    "checked": false
+                },
+                {
+                    "val": "Bla-2",
+                    "checked": false
+                },
+                {
+                    "val": "Others",
+                    "checked": false
+                }
+            ]
+        }
+    }
+}

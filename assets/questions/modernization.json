@@ -1,0 +1,170 @@
+{
+    "modernization": {
+        "q0": {
+            "name": "Has road connectivity improved your life?",
+            "options": [
+                {
+                    "val": "Yes",
+                    "checked": false
+                },
+                {
+                    "val": "No",
+                    "checked": false
+                }
+            ]
+        },
+        "q1": {
+            "name": "Do you have a smartphone?",
+            "options": [
+                {
+                    "val": "Yes",
+                    "checked": false
+                },
+                {
+                    "val": "No",
+                    "checked": false
+                }
+            ]
+        },
+        "q2": {
+            "name": "Do you use internet?",
+            "options": [
+                {
+                    "val": "Yes",
+                    "checked": false
+                },
+                {
+                    "val": "No",
+                    "checked": false
+                }
+            ]
+        },
+        "q3": {
+            "name": "What do you usually use it for?",
+            "options": [
+                {
+                    "val": "Information",
+                    "checked": false
+                },
+                {
+                    "val": "Entertainment",
+                    "checked": false
+                },
+                {
+                    "val": " Banking",
+                    "checked": false
+                },
+                {
+                    "val": "All above",
+                    "checked": false
+                },
+                {
+                    "val": "Others",
+                    "checked": false
+                }
+            ]
+        },
+        "q4": {
+            "name": "Do you think modernisation is affecting the tribal culture? ",
+            "options": [
+                {
+                    "val": "Yes",
+                    "checked": false
+                },
+                {
+                    "val": "No",
+                    "checked": false
+                }
+            ]
+        },
+        "q5": {
+            "name": "If yes, in what aspects?",
+            "options": [
+                {
+                    "val": "Diminishing tribal culture",
+                    "checked": false
+                },
+                {
+                    "val": "Clothing",
+                    "checked": false
+                },
+                {
+                    "val": "Food",
+                    "checked": false
+                },
+                {
+                    "val": "Others",
+                    "checked": false
+                }
+            ]
+        },
+        "q6": {
+            "name": "Do you prefer wearing modern clothes? ",
+            "options": [
+                {
+                    "val": "Yes",
+                    "checked": false
+                },
+                {
+                    "val": "No",
+                    "checked": false
+                }
+            ]
+        },
+        "q7": {
+            "name": "Do you speak languages other than your own? ",
+            "options": [
+                {
+                    "val": "Yes",
+                    "checked": false
+                },
+                {
+                    "val": "No",
+                    "checked": false
+                }
+            ]
+        },
+        "q8": {
+            "name": "If yes, which?",
+            "options": [
+                {
+                    "val": "Hindi",
+                    "checked": false
+                },
+                {
+                    "val": "English",
+                    "checked": false
+                },
+                {
+                    "val": "Others",
+                    "checked": false
+                }
+            ]
+        },
+        "q9": {
+            "name": "How did you learn them? ",
+            "options": [
+                {
+                    "val": "Tourist",
+                    "checked": false
+                },
+                {
+                    "val": "Social media",
+                    "checked": false
+                },
+                {
+                    "val": "Television",
+                    "checked": false
+                },
+                {
+                    "val": "Migration",
+                    "checked": false
+                },
+                {
+                    "val": "Others",
+                    "checked": false
+                }
+            ]
+        }
+    }
+}

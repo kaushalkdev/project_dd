@@ -1,0 +1,96 @@
+{
+    "education": {
+        "q0": {
+            "name": "Educational qualification?",
+            "options": [
+                {
+                    "val": "Primary",
+                    "checked": false
+                },
+                {
+                    "val": "Secondary",
+                    "checked": false
+                },
+                {
+                    "val": "Higher Secondary",
+                    "checked": false
+                },
+                {
+                    "val": "Graduate",
+                    "checked": false
+                },
+                {
+                    "val": "Postgraduate",
+                    "checked": false
+                },
+                {
+                    "val": "Illiterate",
+                    "checked": false
+                },
+                {
+                    "val": "Others",
+                    "checked": false
+                }
+            ]
+        },
+        "q1": {
+            "name": " In case of low level of education, what are the reasons?",
+            "options": [
+                {
+                    "val": "Perception that girls do not need education",
+                    "checked": false
+                },
+                {
+                    "val": "Non availability of schools in close proximity",
+                    "checked": false
+                },
+                {
+                    "val": "Financial issues",
+                    "checked": false
+                },
+                {
+                    "val": "Others",
+                    "checked": false
+                }
+            ]
+        },
+        "q2": {
+            "name": "Do you think that education of male is more important than females?",
+            "options": [
+                {
+                    "val": "Yes",
+                    "checked": false
+                },
+                {
+                    "val": "No",
+                    "checked": false
+                }
+            ]
+        },
+        "q3": {
+            "name": "Purpose of female education?",
+            "options": [
+                {
+                    "val": "Better care of the family",
+                    "checked": false
+                },
+                {
+                    "val": "Better marriage prospects ",
+                    "checked": false
+                },
+                {
+                    "val": "Employment",
+                    "checked": false
+                },
+                {
+                    "val": "Improved social status",
+                    "checked": false
+                },
+                {
+                    "val": "Others",
+                    "checked": false
+                }
+            ]
+        }
+    }
+}

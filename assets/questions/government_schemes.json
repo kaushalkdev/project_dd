@@ -1,0 +1,81 @@
+{
+    "government_schemes": {
+        "q0": {
+            "name": "Do you know about any government scheme in your village?",
+            "options": [
+                {
+                    "val": "Yes",
+                    "checked": false
+                },
+                {
+                    "val": "No",
+                    "checked": false
+                }
+            ]
+        },
+        "q1": {
+            "name": "Have you been benefitted? ",
+            "options": [
+                {
+                    "val": "Yes",
+                    "checked": false
+                },
+                {
+                    "val": "No",
+                    "checked": false
+                }
+            ]
+        },
+        "q2": {
+            "name": "If yes, in what form?",
+            "options": [
+                {
+                    "val": "Financial assistance",
+                    "checked": false
+                },
+                {
+                    "val": "In kind",
+                    "checked": false
+                },
+                {
+                    "val": "Others",
+                    "checked": false
+                }
+            ]
+        },
+        "q3": {
+            "name": "Are you satisfied?",
+            "options": [
+                {
+                    "val": "Yes",
+                    "checked": false
+                },
+                {
+                    "val": "No",
+                    "checked": false
+                }
+            ]
+        },
+        "q4": {
+            "name": "What are the issues according to you?",
+            "options": [
+                {
+                    "val": "Lack of awareness",
+                    "checked": false
+                },
+                {
+                    "val": "Officials",
+                    "checked": false
+                },
+                {
+                    "val": "Corruption",
+                    "checked": false
+                },
+                {
+                    "val": "Others",
+                    "checked": false
+                } 
+            ]
+        }
+    }
+}
