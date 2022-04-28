@@ -38,6 +38,7 @@ class _GeneralSectionState extends State<GeneralSection> {
         children: [
           CommonWidgets.questionBuilder(
               questions: widget.people.general,
+              gender: widget.people.gender,
               updateState: () {
                 setState(() {});
               }),

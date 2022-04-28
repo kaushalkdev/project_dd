@@ -3,6 +3,7 @@ import 'package:project_dd/src/core/adapters/people_adapter.dart';
 import 'package:project_dd/src/core/services/constants.dart';
 import 'package:project_dd/src/core/widgets/common_widgets.dart';
 import 'package:project_dd/src/features/form/apis/load_json_data.dart';
+import 'package:project_dd/src/features/form/ui/education_section.dart';
 
 class GovermentSchemes extends StatefulWidget {
   final People people;
@@ -36,11 +37,15 @@ class _GovermentSchemesState extends State<GovermentSchemes> {
         children: [
           CommonWidgets.questionBuilder(
               questions: widget.people.governmentSchemes,
+              gender: widget.people.gender,
               updateState: () {
                 setState(() {});
               }),
           CommonWidgets.save(
-              context, () => widget.people.save(), Container(), true),
+            context,
+            () => widget.people.save(),
+            Education(people: widget.people),
+          ),
         ],
       ),
     );

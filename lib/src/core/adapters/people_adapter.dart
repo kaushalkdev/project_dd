@@ -1,4 +1,3 @@
-import 'package:uuid/uuid.dart';
 import 'package:hive/hive.dart';
 
 part 'people_adapter.g.dart';
@@ -14,17 +13,19 @@ class People extends HiveObject {
   @HiveField(3)
   late String location;
   @HiveField(4)
-  late Map<String, dynamic> general = {};
+  late String gender;
   @HiveField(5)
-  late Map<String, dynamic> economy = {};
+  late Map<String, dynamic> general = {};
   @HiveField(6)
-  late Map<String, dynamic> education = {};
+  late Map<String, dynamic> economy = {};
   @HiveField(7)
-  late Map<String, dynamic> governmentSchemes = {};
+  late Map<String, dynamic> education = {};
   @HiveField(8)
-  late Map<String, dynamic> health = {};
+  late Map<String, dynamic> governmentSchemes = {};
   @HiveField(9)
-  late Map<String, dynamic> modernization = {};
+  late Map<String, dynamic> health = {};
   @HiveField(10)
+  late Map<String, dynamic> modernization = {};
+  @HiveField(11)
   late Map<String, dynamic> social = {};
 }

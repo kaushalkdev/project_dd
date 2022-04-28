@@ -2,6 +2,8 @@
     "education": {
         "q0": {
             "name": "Educational qualification?",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Primary",
@@ -35,6 +37,8 @@
         },
         "q1": {
             "name": " In case of low level of education, what are the reasons?",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Perception that girls do not need education",
@@ -56,6 +60,8 @@
         },
         "q2": {
             "name": "Do you think that education of male is more important than females?",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Yes",
@@ -69,6 +75,8 @@
         },
         "q3": {
             "name": "Purpose of female education?",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Better care of the family",
@@ -88,6 +96,294 @@
                 },
                 {
                     "val": "Others",
+                    "checked": false
+                }
+            ]
+        },
+        "q4": {
+            "name": "Decision-making in terms of Education?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
+            "options": [
+                {
+                    "val": "Own",
+                    "checked": false
+                },
+                {
+                    "val": "Jointly by Husband ",
+                    "checked": false
+                },
+                {
+                    "val": "Family Decision",
+                    "checked": false
+                },
+                {
+                    "val": "Solely others",
+                    "checked": false
+                },
+                {
+                    "val": "Others",
+                    "checked": false
+                }
+            ]
+        },
+        "q5": {
+            "name": "Decision-making in terms of Career?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
+            "options": [
+                {
+                    "val": "Own",
+                    "checked": false
+                },
+                {
+                    "val": "Jointly by Husband ",
+                    "checked": false
+                },
+                {
+                    "val": "Family Decision",
+                    "checked": false
+                },
+                {
+                    "val": "Solely others",
+                    "checked": false
+                },
+                {
+                    "val": "Others",
+                    "checked": false
+                }
+            ]
+        },
+        "q6": {
+            "name": "Decision-making in terms of Marriage?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
+            "options": [
+                {
+                    "val": "Own",
+                    "checked": false
+                },
+                {
+                    "val": "Jointly by Husband ",
+                    "checked": false
+                },
+                {
+                    "val": "Family Decision",
+                    "checked": false
+                },
+                {
+                    "val": "Solely others",
+                    "checked": false
+                },
+                {
+                    "val": "Others",
+                    "checked": false
+                }
+            ]
+        },
+        "q7": {
+            "name": "Decision-making in terms of family Planning?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
+            "options": [
+                {
+                    "val": "Own",
+                    "checked": false
+                },
+                {
+                    "val": "Jointly by Husband ",
+                    "checked": false
+                },
+                {
+                    "val": "Family Decision",
+                    "checked": false
+                },
+                {
+                    "val": "Solely others",
+                    "checked": false
+                },
+                {
+                    "val": "Others",
+                    "checked": false
+                }
+            ]
+        },
+        "q8": {
+            "name": "Decision-making in terms of family Budgeting?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
+            "options": [
+                {
+                    "val": "Own",
+                    "checked": false
+                },
+                {
+                    "val": "Jointly by Husband ",
+                    "checked": false
+                },
+                {
+                    "val": "Family Decision",
+                    "checked": false
+                },
+                {
+                    "val": "Solely others",
+                    "checked": false
+                },
+                {
+                    "val": "Others",
+                    "checked": false
+                }
+            ]
+        },
+        "q9": {
+            "name": "Decision-making in terms of voting?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
+            "options": [
+                {
+                    "val": "Own",
+                    "checked": false
+                },
+                {
+                    "val": "Jointly by Husband ",
+                    "checked": false
+                },
+                {
+                    "val": "Family Decision",
+                    "checked": false
+                },
+                {
+                    "val": "Solely others",
+                    "checked": false
+                },
+                {
+                    "val": "Others",
+                    "checked": false
+                }
+            ]
+        },
+        "q10": {
+            "name": "Decision-making in terms of health?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
+            "options": [
+                {
+                    "val": "Own",
+                    "checked": false
+                },
+                {
+                    "val": "Jointly by Husband ",
+                    "checked": false
+                },
+                {
+                    "val": "Family Decision",
+                    "checked": false
+                },
+                {
+                    "val": "Solely others",
+                    "checked": false
+                },
+                {
+                    "val": "Others",
+                    "checked": false
+                }
+            ]
+        },
+        "q11": {
+            "name": "Decision-making in terms of mobility?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
+            "options": [
+                {
+                    "val": "Own",
+                    "checked": false
+                },
+                {
+                    "val": "Jointly by Husband ",
+                    "checked": false
+                },
+                {
+                    "val": "Family Decision",
+                    "checked": false
+                },
+                {
+                    "val": "Solely others",
+                    "checked": false
+                },
+                {
+                    "val": "Others",
+                    "checked": false
+                }
+            ]
+        },
+        "q12": {
+            "name": "Decision-making in terms of decisions related to children?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
+            "options": [
+                {
+                    "val": "Own",
+                    "checked": false
+                },
+                {
+                    "val": "Jointly by Husband ",
+                    "checked": false
+                },
+                {
+                    "val": "Family Decision",
+                    "checked": false
+                },
+                {
+                    "val": "Solely others",
+                    "checked": false
+                },
+                {
+                    "val": "Others",
+                    "checked": false
+                }
+            ]
+        },
+        "q13": {
+            "name": "Do you vote?",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
+            "options": [
+                {
+                    "val": "Yes",
+                    "checked": false
+                },
+                {
+                    "val": "No ",
+                    "checked": false
+                }
+            ]
+        },
+        "q14": {
+            "name": "Have you ever contested an election?",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
+            "options": [
+                {
+                    "val": "Yes",
+                    "checked": false
+                },
+                {
+                    "val": "No ",
+                    "checked": false
+                }
+            ]
+        },
+        "q15": {
+            "name": "Do you think females should be represented in local bodies?",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
+            "options": [
+                {
+                    "val": "Yes",
+                    "checked": false
+                },
+                {
+                    "val": "No ",
                     "checked": false
                 }
             ]

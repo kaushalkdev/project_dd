@@ -1,7 +1,22 @@
 {
     "general": {
         "q0": {
+            "name": "Name of tribe",
+            "isFemaleOnly": false,
+            "options": [
+                {
+                    "val": "Changpa",
+                    "checked": false
+                },
+                {
+                    "val": "Brokpa",
+                    "checked": false
+                }
+            ]
+        },
+        "q1": {
             "name": "Type of family",
+            "isFemaleOnly": true,
             "options": [
                 {
                     "val": "Nuclear",
@@ -13,8 +28,9 @@
                 }
             ]
         },
-        "q1": {
+        "q2": {
             "name": "Age",
+            "isFemaleOnly": true,
             "options": [
                 {
                     "val": "Below 18",
@@ -34,8 +50,9 @@
                 }
             ]
         },
-        "q2": {
+        "q3": {
             "name": "Gender",
+            "isFemaleOnly": true,
             "options": [
                 {
                     "val": "Male",
@@ -47,8 +64,9 @@
                 }
             ]
         },
-        "q3": {
+        "q4": {
             "name": "Maritial Status",
+            "isFemaleOnly": true,
             "options": [
                 {
                     "val": "Married",
@@ -68,8 +86,9 @@
                 }
             ]
         },
-        "q4": {
+        "q5": {
             "name": "Number of childerns",
+            "isFemaleOnly": true,
             "options": [
                 {
                     "val": "0",
@@ -93,8 +112,9 @@
                 }
             ]
         },
-        "q5": {
+        "q6": {
             "name": "Number of girls",
+            "isFemaleOnly": true,
             "options": [
                 {
                     "val": "0",
@@ -114,8 +134,9 @@
                 }
             ]
         },
-        "q6": {
+        "q7": {
             "name": "Type of house",
+            "isFemaleOnly": true,
             "options": [
                 {
                     "val": "Pucca",
@@ -135,8 +156,9 @@
                 }
             ]
         },
-        "q7": {
+        "q8": {
             "name": "Access to toilet",
+            "isFemaleOnly": true,
             "options": [
                 {
                     "val": "Yes",
@@ -148,8 +170,9 @@
                 }
             ]
         },
-        "q8": {
+        "q9": {
             "name": "Type of toilet",
+            "isFemaleOnly": true,
             "options": [
                 {
                     "val": "Dry",
@@ -165,8 +188,9 @@
                 }
             ]
         },
-        "q9": {
+        "q10": {
             "name": "Source of light",
+            "isFemaleOnly": true,
             "options": [
                 {
                     "val": "Electricity",
@@ -186,8 +210,9 @@
                 }
             ]
         },
-        "q10": {
+        "q11": {
             "name": "Source of Cooking",
+            "isFemaleOnly": true,
             "options": [
                 {
                     "val": "Electricity",
@@ -215,8 +240,9 @@
                 }
             ]
         },
-        "q11": {
+        "q12": {
             "name": "Source of drinking",
+            "isFemaleOnly": true,
             "options": [
                 {
                     "val": "Hand Pump",

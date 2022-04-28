@@ -2,6 +2,8 @@
     "government_schemes": {
         "q0": {
             "name": "Do you know about any government scheme in your village?",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Yes",
@@ -14,7 +16,15 @@
             ]
         },
         "q1": {
+            "name": "If yes,which one?",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
+            "options": []
+        },
+        "q2": {
             "name": "Have you been benefitted? ",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Yes",
@@ -26,8 +36,10 @@
                 }
             ]
         },
-        "q2": {
+        "q3": {
             "name": "If yes, in what form?",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Financial assistance",
@@ -43,8 +55,10 @@
                 }
             ]
         },
-        "q3": {
+        "q4": {
             "name": "Are you satisfied?",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Yes",
@@ -56,8 +70,10 @@
                 }
             ]
         },
-        "q4": {
+        "q5": {
             "name": "What are the issues according to you?",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Lack of awareness",
@@ -74,7 +90,7 @@
                 {
                     "val": "Others",
                     "checked": false
-                } 
+                }
             ]
         }
     }

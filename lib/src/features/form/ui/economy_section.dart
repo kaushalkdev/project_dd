@@ -37,6 +37,7 @@ class _EconomyState extends State<Economy> {
         children: [
           CommonWidgets.questionBuilder(
               questions: widget.people.economy,
+              gender: widget.people.gender,
               updateState: () {
                 setState(() {});
               }),

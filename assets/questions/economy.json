@@ -2,6 +2,8 @@
     "economy": {
         "q0": {
             "name": "Are you working?",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Yes",
@@ -15,17 +17,27 @@
         },
         "q1": {
             "name": "If yes, where?",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
             "options": [
                 {
-                    "val": "Govt sector",
+                    "val": "Agricultural labourer",
                     "checked": false
                 },
                 {
-                    "val": "Self employment",
+                    "val": "construction worker",
                     "checked": false
                 },
                 {
-                    "val": "Private sector",
+                    "val": "Government Employee",
+                    "checked": false
+                },
+                {
+                    "val": "self employment",
+                    "checked": false
+                },
+                {
+                    "val": "Private",
                     "checked": false
                 },
                 {
@@ -36,6 +48,8 @@
         },
         "q2": {
             "name": "Income generated?",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "below 10 thousand",
@@ -46,13 +60,15 @@
                     "checked": false
                 },
                 {
-                    "val":"above 20 thousand",
+                    "val": "above 20 thousand",
                     "checked": false
                 }
             ]
         },
         "q3": {
             "name": "Do you own any agricultural land?",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Yes",
@@ -61,11 +77,13 @@
                 {
                     "val": "No",
                     "checked": false
-                } 
+                }
             ]
         },
         "q4": {
             "name": "Do you have a bank account?",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Yes",
@@ -79,6 +97,8 @@
         },
         "q5": {
             "name": "How often do you visit the bank?",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Frequently",
@@ -100,6 +120,8 @@
         },
         "q6": {
             "name": "Do you use the ATM card to withdraw the money?",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Yes",
@@ -113,6 +135,8 @@
         },
         "q7": {
             "name": "Do you have any property in your name?",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Yes",
@@ -126,6 +150,8 @@
         },
         "q8": {
             "name": "Do you think girls should be allowed to work outside the home? ",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Yes",
@@ -133,6 +159,45 @@
                 },
                 {
                     "val": "No",
+                    "checked": false
+                }
+            ]
+        },
+        "q9": {
+            "name": "What profession do you think is most suitable for females? ",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
+            "options": [
+                {
+                    "val": "Teaching",
+                    "checked": false
+                },
+                {
+                    "val": "Banking",
+                    "checked": false
+                },
+                {
+                    "val": "Nurse",
+                    "checked": false
+                },
+                {
+                    "val": "Any government employee",
+                    "checked": false
+                },
+                {
+                    "val": "Sports",
+                    "checked": false
+                },
+                {
+                    "val": "Fashion",
+                    "checked": false
+                },
+                {
+                    "val": "own willingness",
+                    "checked": false
+                },
+                {
+                    "val": "Others",
                     "checked": false
                 }
             ]

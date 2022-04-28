@@ -24,7 +24,8 @@ class CommonWidgets {
 
   static Widget questionBuilder(
       {required Map<String, dynamic> questions,
-      required void Function() updateState}) {
+      required void Function() updateState,
+      required String gender}) {
     return Expanded(
       child: ListView.builder(
         itemCount: questions.length,
@@ -35,24 +36,23 @@ class CommonWidgets {
             );
           }
 
-          return _singleQuestion(questionIndex, questions, updateState);
+          return singleQuestion(questionIndex, questions, updateState, gender);
         },
       ),
     );
   }
 
-  static ListTile _singleQuestion(int questionIndex,
-      Map<String, dynamic> questions, void Function() updateState) {
-    return ListTile(
-        title: Text(questions['q$questionIndex']['name']),
-        subtitle: Column(
-          children: [
-            for (int optionIndex = 0;
-                optionIndex < questions['q$questionIndex']['options'].length;
-                optionIndex++)
-              _singleOption(questionIndex, optionIndex, questions, updateState),
-          ],
-        ));
+  static Widget singleQuestion(
+      int questionIndex,
+      Map<String, dynamic> questions,
+      void Function() updateState,
+      String gender) {
+    Map<dynamic, dynamic> qmap = questions['q$questionIndex'];
+    if (qmap['isFemaleOnly'] && gender.toLowerCase() == 'male') {
+      return Container();
+    } else {
+      return buildQuestion(qmap, questionIndex, questions, updateState);
+    }
   }
 
   static Row _singleOption(int questionIndex, int optionIndex,
@@ -68,8 +68,66 @@ class CommonWidgets {
             updateState();
           },
         ),
-        Text(questions['q$questionIndex']['options'][optionIndex]['val']),
+        Expanded(
+            child: Padding(
+          padding: const EdgeInsets.all(4.0),
+          child: Text(
+            questions['q$questionIndex']['options'][optionIndex]['val'],
+          ),
+        )),
       ],
     );
+  }
+
+  static Widget buildQuestion(Map qmap, int questionIndex,
+      Map<String, dynamic> questions, void Function() updateState) {
+    // if the question does not have options then render textfield.
+    if (qmap['options'].length == 0) {
+      return Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Card(
+          elevation: 7,
+          child: ListTile(
+              title: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(qmap['name'], textAlign: TextAlign.start),
+              ),
+              subtitle: Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: TextFormField(
+                  initialValue: qmap['openEndedAnswer'],
+                  decoration: const InputDecoration(hintText: 'Type here...'),
+                  onChanged: (changedAnswer) {
+                    qmap['openEndedAnswer'] = changedAnswer;
+                  },
+                ),
+              )),
+        ),
+      );
+    }
+    // else return question with option.
+    else {
+      return Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Card(
+          elevation: 7,
+          child: ListTile(
+            title: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(qmap['name']),
+            ),
+            subtitle: Column(
+              children: [
+                for (int optionIndex = 0;
+                    optionIndex < qmap['options'].length;
+                    optionIndex++)
+                  _singleOption(
+                      questionIndex, optionIndex, questions, updateState),
+              ],
+            ),
+          ),
+        ),
+      );
+    }
   }
 }

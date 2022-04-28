@@ -1,7 +1,9 @@
 {
-    "modernization": {
+    "modernisation": {
         "q0": {
             "name": "Has road connectivity improved your life?",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Yes",
@@ -15,6 +17,8 @@
         },
         "q1": {
             "name": "Do you have a smartphone?",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Yes",
@@ -28,6 +32,8 @@
         },
         "q2": {
             "name": "Do you use internet?",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Yes",
@@ -41,6 +47,8 @@
         },
         "q3": {
             "name": "What do you usually use it for?",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Information",
@@ -66,6 +74,8 @@
         },
         "q4": {
             "name": "Do you think modernisation is affecting the tribal culture? ",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Yes",
@@ -79,17 +89,19 @@
         },
         "q5": {
             "name": "If yes, in what aspects?",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
             "options": [
                 {
-                    "val": "Diminishing tribal culture",
+                    "val": "Mostly positive,in terms of education,health facilities,connectivity,employment",
                     "checked": false
                 },
                 {
-                    "val": "Clothing",
+                    "val": "Mostly negative in terms of diminshing tribal culture,overexposure to tourists,migrants and social media etc",
                     "checked": false
                 },
                 {
-                    "val": "Food",
+                    "val": "Equally positive and negative",
                     "checked": false
                 },
                 {
@@ -100,6 +112,8 @@
         },
         "q6": {
             "name": "Do you prefer wearing modern clothes? ",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Yes",
@@ -113,6 +127,8 @@
         },
         "q7": {
             "name": "Do you speak languages other than your own? ",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Yes",
@@ -126,6 +142,8 @@
         },
         "q8": {
             "name": "If yes, which?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Hindi",
@@ -143,6 +161,8 @@
         },
         "q9": {
             "name": "How did you learn them? ",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Tourist",
@@ -161,7 +181,148 @@
                     "checked": false
                 },
                 {
-                    "val": "Others",
+                    "val": "Education",
+                    "checked": false
+                },
+                {
+                    "val": "others",
+                    "checked": false
+                }
+            ]
+        },
+        "q10": {
+            "name": "Do you think your diet has changed due to modernization? ",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
+            "options": [
+                {
+                    "val": "Yes",
+                    "checked": false
+                },
+                {
+                    "val": "No",
+                    "checked": false
+                }
+            ]
+        },
+        "q11": {
+            "name": "How often do you cook your traditional food? ",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
+            "options": [
+                {
+                    "val": "Frequently",
+                    "checked": false
+                },
+                {
+                    "val": "sometimes",
+                    "checked": false
+                },
+                {
+                    "val": "Rarely",
+                    "checked": false
+                },
+                {
+                    "val": "Never",
+                    "checked": false
+                }
+            ]
+        },
+        "q12": {
+            "name": "Have you changed your profession in last ten years? ",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
+            "options": [
+                {
+                    "val": "Yes",
+                    "checked": false
+                },
+                {
+                    "val": "No",
+                    "checked": false
+                }
+            ]
+        },
+        "q13": {
+            "name": "Do you think that your next generation should continue the traditional work? ",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
+            "options": [
+                {
+                    "val": "Yes",
+                    "checked": false
+                },
+                {
+                    "val": "No",
+                    "checked": false
+                }
+            ]
+        },
+        "q14": {
+            "name": "How do you think modernisation has impacted women's lives? ",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
+            "options": [
+                {
+                    "val": "Positively",
+                    "checked": false
+                },
+                {
+                    "val": "Negatively",
+                    "checked": false
+                },
+                {
+                    "val": "Both positive and negative",
+                    "checked": false
+                }
+            ]
+        },
+        "q15": {
+            "name": "Positive impacts of modernisation on women  ",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
+            "options": [
+                {
+                    "val": "Better education and employment opportunities",
+                    "checked": false
+                },
+                {
+                    "val": "better health facilities and growing awareness related to female health",
+                    "checked": false
+                },
+                {
+                    "val": "improved role in decision-making at household level",
+                    "checked": false
+                },
+                {
+                    "val": "Improved role in decision- making at community level",
+                    "checked": false
+                },
+                {
+                    "val": "better social status",
+                    "checked": false
+                },
+                {
+                    "val": "Improved self confidence and awareness",
+                    "checked": false
+                }
+            ]
+        },
+        "q16": {
+            "name": "Negative impacts of modernisation on women  ",
+            "isFemaleOnly": false,
+            "openEndedAnswer": "",
+            "options": [
+                {
+                    "val": "Overburdening due to dual responsibility of household chores as well as job",
+                    "checked": false
+                },
+                {
+                    "val": "Overexposure to tourists,migrants and social media thus increasing their vulnerability",
+                    "checked": false
+                },
+                {
+                    "val": "Feminisation of household asen usually migrate for work or education",
                     "checked": false
                 }
             ]

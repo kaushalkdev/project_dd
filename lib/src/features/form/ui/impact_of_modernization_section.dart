@@ -37,6 +37,7 @@ class _ModernizationState extends State<Modernization> {
         children: [
           CommonWidgets.questionBuilder(
               questions: widget.people.modernization,
+              gender: widget.people.gender,
               updateState: () {
                 setState(() {});
               }),

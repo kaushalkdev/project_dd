@@ -2,6 +2,8 @@
     "social": {
         "q0": {
             "name": "Do you believe in worshipping of nature?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Yes",
@@ -15,6 +17,8 @@
         },
         "q1": {
             "name": "If yes, what do you worship?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Mother Earth",
@@ -48,6 +52,8 @@
         },
         "q2": {
             "name": "Do your rituals call for sacrifices of animals?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Yes",
@@ -61,6 +67,8 @@
         },
         "q3": {
             "name": " Do you cremate the dead?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Yes",
@@ -70,11 +78,12 @@
                     "val": "No",
                     "checked": false
                 }
-              
             ]
         },
         "q4": {
             "name": "Do you offer prayers to the dead/ Deceased?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Yes",
@@ -88,6 +97,8 @@
         },
         "q5": {
             "name": "If yes, what do you do?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Offer food",
@@ -113,6 +124,8 @@
         },
         "q6": {
             "name": "Are you allowed to participate in various religious rituals?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Yes",
@@ -121,24 +134,19 @@
                 {
                     "val": "No",
                     "checked": false
-                } 
+                }
             ]
         },
         "q7": {
-            "name": "Is there any ceremony at the birth of the child?",
-            "options": [
-                {
-                    "val": "Yes",
-                    "checked": false
-                },
-                {
-                    "val": "No",
-                    "checked": false
-                }
-            ]
+            "name": "What festivals do you celebrate?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
+            "options": []
         },
         "q8": {
-            "name": "If yes, is same observed for the girl child?",
+            "name": "Is there any ceremony at the birth of the child?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Yes",
@@ -148,11 +156,12 @@
                     "val": "No",
                     "checked": false
                 }
-                
             ]
         },
         "q9": {
-            "name": "Is these any restriction in participation of females during mensuration?",
+            "name": "If yes, is same observed for the girl child?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Yes",
@@ -161,11 +170,13 @@
                 {
                     "val": "No",
                     "checked": false
-                }  
+                }
             ]
         },
         "q10": {
-            "name": "Do you practice the rituals of consuming traditional liquors during ceremonies?",
+            "name": "Is these any restriction in participation of females during mensuration?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Yes",
@@ -178,7 +189,30 @@
             ]
         },
         "q11": {
+            "name": "If yes,what restrictions?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
+            "options": []
+        },
+        "q12": {
+            "name": "Do you practice the rituals of consuming traditional liquors during ceremonies?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
+            "options": [
+                {
+                    "val": "Yes",
+                    "checked": false
+                },
+                {
+                    "val": "No",
+                    "checked": false
+                }
+            ]
+        },
+        "q13": {
             "name": " Practices followed by you for the treatment of diseases?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Traditional herbs",
@@ -202,8 +236,10 @@
                 }
             ]
         },
-        "q12": {
+        "q14": {
             "name": "How often do you visit places of religious interest?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Everyday",
@@ -223,34 +259,40 @@
                 }
             ]
         },
-        "q13": {
-            "name": "Is there any gender segregation at place of worship?",
-            "options": [
-                {
-                    "val": "Yes",
-                    "checked": false
-                },
-                {
-                    "val": "No",
-                    "checked": false
-                } 
-            ]
-        },
-        "q14": {
-            "name": " Do you and your family speak your language?",
-            "options": [
-                {
-                    "val": "Yes",
-                    "checked": false
-                },
-                {
-                    "val": "No",
-                    "checked": false
-                } 
-            ]
-        },
         "q15": {
+            "name": "Is there any gender segregation at place of worship?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
+            "options": [
+                {
+                    "val": "Yes",
+                    "checked": false
+                },
+                {
+                    "val": "No",
+                    "checked": false
+                }
+            ]
+        },
+        "q16": {
+            "name": " Do you and your family speak your language?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
+            "options": [
+                {
+                    "val": "Yes",
+                    "checked": false
+                },
+                {
+                    "val": "No",
+                    "checked": false
+                }
+            ]
+        },
+        "q17": {
             "name": "If yes, with whom? ",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Within family with elders only",
@@ -267,11 +309,13 @@
                 {
                     "val": "others",
                     "checked": false
-                } 
+                }
             ]
         },
-        "q16": {
+        "q18": {
             "name": " Do you know your folk song and dance?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Yes",
@@ -283,8 +327,10 @@
                 }
             ]
         },
-        "q17": {
+        "q19": {
             "name": "What are the cultural ceremonies followed during ceremonies of celebration?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Songs",
@@ -312,59 +358,25 @@
                 }
             ]
         },
-        "q18": {
-            "name": "Do you practice any type of specific painting or handicraft?",
-            "options": [
-                {
-                    "val": "Yes",
-                    "checked": false
-                },
-                {
-                    "val": "No",
-                    "checked": false
-                } 
-            ]
-        },
-        "q19": {
-            "name": "Are you allowed to marry outside your caste?",
-            "options": [
-                {
-                    "val": "Yes",
-                    "checked": false
-                },
-                {
-                    "val": "No",
-                    "checked": false
-                } 
-            ]
-        },
         "q20": {
-            "name": " Practices followed by you for the treatment of diseases?",
+            "name": "Do you practice any type of specific painting or handicraft?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
             "options": [
                 {
-                    "val": "Traditional herbs",
+                    "val": "Yes",
                     "checked": false
                 },
                 {
-                    "val": "Exorcism (ojha)",
-                    "checked": false
-                },
-                {
-                    "val": "Baid / Hakim",
-                    "checked": false
-                },
-                {
-                    "val": "Consult doctors",
-                    "checked": false
-                },
-                {
-                    "val": "All",
+                    "val": "No",
                     "checked": false
                 }
             ]
         },
         "q21": {
-            "name": "Is there any sort of punishment?",
+            "name": "Are you allowed to marry outside your caste?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Yes",
@@ -377,26 +389,43 @@
             ]
         },
         "q22": {
-            "name": " Daily routine (24 hrs)?",
+            "name": "Is there any sort of punishment?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
             "options": [
                 {
-                    "val": "Household chores and Family care",
+                    "val": "Yes",
                     "checked": false
                 },
                 {
-                    "val": "Work",
+                    "val": "No",
                     "checked": false
-                },
-                {
-                    "val": "Self/ Leisure time",
-                    "checked": false
-                },
-                {
-                    "val": "Others",
-                    "checked": false
-                } 
+                }
             ]
+        },
+        "q23": {
+            "name": " Daily routine -Household chores and Family care (24 hrs)?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
+            "options": []
+        },
+        "q24": {
+            "name": " Daily routine -work (24 hrs)?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
+            "options": []
+        },
+        "q25": {
+            "name": " Daily routine -self/leisure (24 hrs)?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
+            "options": []
+        },
+        "q26": {
+            "name": " Daily routine -self/leisure (24 hrs)?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
+            "options": []
         }
     }
-
 }

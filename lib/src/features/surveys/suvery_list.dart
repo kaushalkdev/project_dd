@@ -5,6 +5,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:intl/intl.dart';
 import 'package:project_dd/src/core/adapters/people_adapter.dart';
 import 'package:project_dd/src/core/services/constants.dart';
+import 'package:project_dd/src/core/widgets/common_widgets.dart';
 import 'package:project_dd/src/features/form/ui/general_section.dart';
 import 'package:uuid/uuid.dart';
 
@@ -69,46 +70,85 @@ class _SurveyListsState extends State<SurveyLists> {
   }
 
   Future<dynamic> addPerson(BuildContext context, People people) {
+    String groupValue = '';
     return showDialog(
         context: context,
-        builder: (context) => AlertDialog(
-              title: const Text('Add a person'),
-              content: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  TextField(
-                    decoration: const InputDecoration(
-                      labelText: 'Name',
+        builder: (context) => StatefulBuilder(
+              builder: (context, setState) => AlertDialog(
+                title: const Text('Add a person'),
+                content: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    TextField(
+                      decoration: const InputDecoration(
+                        labelText: 'Name',
+                      ),
+                      onChanged: (value) {
+                        people.name = value;
+                      },
                     ),
-                    onChanged: (value) {
-                      people.name = value;
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            Radio<String>(
+                              value: 'Male',
+                              groupValue: groupValue,
+                              onChanged: (changed) {
+                                setState(
+                                  () {
+                                    groupValue = changed!;
+                                    people.gender = groupValue;
+                                  },
+                                );
+                              },
+                            ),
+                            const Text('Male')
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            Radio<String>(
+                              value: 'Female',
+                              groupValue: groupValue,
+                              onChanged: (changed) {
+                                groupValue = changed!;
+                                people.gender = groupValue;
+                                setState(() {});
+                              },
+                            ),
+                            const Text('Female')
+                          ],
+                        )
+                      ],
+                    ),
+                    TextField(
+                      decoration: const InputDecoration(
+                        labelText: 'Location',
+                      ),
+                      onChanged: (value) {
+                        people.location = value;
+                      },
+                    ),
+                  ],
+                ),
+                actions: <Widget>[
+                  ElevatedButton(
+                    child: const Text('Cancel'),
+                    onPressed: () {
+                      Navigator.pop(context);
                     },
                   ),
-                  TextField(
-                    decoration: const InputDecoration(
-                      labelText: 'Location',
-                    ),
-                    onChanged: (value) {
-                      people.location = value;
+                  ElevatedButton(
+                    child: const Text('Save'),
+                    onPressed: () {
+                      Hive.box<People>(Constants.hiveBox).add(people);
+                      Navigator.pop(context);
                     },
                   ),
                 ],
               ),
-              actions: <Widget>[
-                ElevatedButton(
-                  child: const Text('Cancel'),
-                  onPressed: () {
-                    Navigator.pop(context);
-                  },
-                ),
-                ElevatedButton(
-                  child: const Text('Save'),
-                  onPressed: () {
-                    Hive.box<People>(Constants.hiveBox).add(people);
-                    Navigator.pop(context);
-                  },
-                ),
-              ],
             ));
   }
 
@@ -122,6 +162,8 @@ class _SurveyListsState extends State<SurveyLists> {
               color: Colors.blue,
             ),
             Text(people.name.toUpperCase()),
+            Spacer(),
+            Text(people.gender.toUpperCase()),
           ],
         ),
         subtitle: Row(

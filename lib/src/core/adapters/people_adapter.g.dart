@@ -21,19 +21,20 @@ class PeopleAdapter extends TypeAdapter<People> {
       ..name = fields[1] as String
       ..dateTime = fields[2] as DateTime
       ..location = fields[3] as String
-      ..general = (fields[4] as Map).cast<String, dynamic>()
-      ..economy = (fields[5] as Map).cast<String, dynamic>()
-      ..education = (fields[6] as Map).cast<String, dynamic>()
-      ..governmentSchemes = (fields[7] as Map).cast<String, dynamic>()
-      ..health = (fields[8] as Map).cast<String, dynamic>()
-      ..modernization = (fields[9] as Map).cast<String, dynamic>()
-      ..social = (fields[10] as Map).cast<String, dynamic>();
+      ..gender = fields[4] as String
+      ..general = (fields[5] as Map).cast<String, dynamic>()
+      ..economy = (fields[6] as Map).cast<String, dynamic>()
+      ..education = (fields[7] as Map).cast<String, dynamic>()
+      ..governmentSchemes = (fields[8] as Map).cast<String, dynamic>()
+      ..health = (fields[9] as Map).cast<String, dynamic>()
+      ..modernization = (fields[10] as Map).cast<String, dynamic>()
+      ..social = (fields[11] as Map).cast<String, dynamic>();
   }
 
   @override
   void write(BinaryWriter writer, People obj) {
     writer
-      ..writeByte(11)
+      ..writeByte(12)
       ..writeByte(0)
       ..write(obj.uuid)
       ..writeByte(1)
@@ -43,18 +44,20 @@ class PeopleAdapter extends TypeAdapter<People> {
       ..writeByte(3)
       ..write(obj.location)
       ..writeByte(4)
-      ..write(obj.general)
+      ..write(obj.gender)
       ..writeByte(5)
-      ..write(obj.economy)
+      ..write(obj.general)
       ..writeByte(6)
-      ..write(obj.education)
+      ..write(obj.economy)
       ..writeByte(7)
-      ..write(obj.governmentSchemes)
+      ..write(obj.education)
       ..writeByte(8)
-      ..write(obj.health)
+      ..write(obj.governmentSchemes)
       ..writeByte(9)
-      ..write(obj.modernization)
+      ..write(obj.health)
       ..writeByte(10)
+      ..write(obj.modernization)
+      ..writeByte(11)
       ..write(obj.social);
   }
 

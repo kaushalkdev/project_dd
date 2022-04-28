@@ -2,6 +2,8 @@
     "health": {
         "q0": {
             "name": "Diseases",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Cold, fever, cough, malaria, tuberculosis",
@@ -26,7 +28,21 @@
             ]
         },
         "q1": {
+            "name": "Age at marriage",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
+            "options": []
+        },
+        "q2": {
+            "name": "Age at time of first child",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
+            "options": []
+        },
+        "q3": {
             "name": "Interval btw children",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "1 year",
@@ -46,8 +62,10 @@
                 }
             ]
         },
-        "q2": {
+        "q4": {
             "name": "Place of delivery",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Govt hospital",
@@ -67,51 +85,25 @@
                 }
             ]
         },
-        "q3": {
-            "name": "Death of any child?",
-            "options": [
-                {
-                    "val": "Yes",
-                    "checked": false
-                },
-                {
-                    "val": "No",
-                    "checked": false
-                }
-            ]
-        },
-        "q4": {
-            "name": "Consultation with doctors during pregnancy",
-            "options": [
-                {
-                    "val": "Yes",
-                    "checked": false
-                },
-                {
-                    "val": "No",
-                    "checked": false
-                }
-            ]
-        },
         "q5": {
-            "name": "Medical care received during pregnanacy",
+            "name": "Death of any child?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
             "options": [
                 {
-                    "val": "Iron folic tablets",
+                    "val": "Yes",
                     "checked": false
                 },
                 {
-                    "val": "Ante natal check ups",
-                    "checked": false
-                },
-                {
-                    "val": "Others",
+                    "val": "No",
                     "checked": false
                 }
             ]
         },
         "q6": {
-            "name": "Do you know about family planning methods?",
+            "name": "Consultation with doctors during pregnancy",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Yes",
@@ -124,7 +116,32 @@
             ]
         },
         "q7": {
-            "name": "Access to toilet",
+            "name": "Medical care received during pregnanacy",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
+            "options": [
+                {
+                    "val": "Iron folic tablets",
+                    "checked": false
+                },
+                {
+                    "val": "Ante natal check ups",
+                    "checked": false
+                },
+                {
+                    "val": "Post natal",
+                    "checked": false
+                },
+                {
+                    "val": "Post natal",
+                    "checked": false
+                }
+            ]
+        },
+        "q8": {
+            "name": "Do you know about family planning methods?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Yes",
@@ -136,8 +153,10 @@
                 }
             ]
         },
-        "q8": {
+        "q9": {
             "name": "Do you use any family planning method?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
             "options": [
                 {
                     "val": "Yes",
@@ -146,22 +165,24 @@
                 {
                     "val": "No",
                     "checked": false
-                } 
+                }
             ]
         },
-        "q9": {
+        "q10": {
             "name": "If yes, which one?",
+            "isFemaleOnly": true,
+            "openEndedAnswer": "",
             "options": [
                 {
-                    "val": "Copper-T",
+                    "val": "Pills",
                     "checked": false
                 },
                 {
-                    "val": "Bla-1",
+                    "val": "feamle sterilisation",
                     "checked": false
                 },
                 {
-                    "val": "Bla-2",
+                    "val": "copper-T",
                     "checked": false
                 },
                 {

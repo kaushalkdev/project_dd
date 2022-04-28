@@ -37,6 +37,7 @@ class _SocialReligiousState extends State<SocialReligious> {
         children: [
           CommonWidgets.questionBuilder(
               questions: widget.people.social,
+              gender: widget.people.gender,
               updateState: () {
                 setState(() {});
               }),

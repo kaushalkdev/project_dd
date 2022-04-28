@@ -38,6 +38,7 @@ class _HealthProfileState extends State<HealthProfile> {
         children: [
           CommonWidgets.questionBuilder(
               questions: widget.people.health,
+              gender: widget.people.gender,
               updateState: () {
                 setState(() {});
               }),
