@@ -4,6 +4,7 @@ import 'package:project_dd/src/core/adapters/people_adapter.dart';
 import 'package:project_dd/src/core/services/constants.dart';
 import 'package:project_dd/src/core/widgets/common_widgets.dart';
 import 'package:project_dd/src/features/form/apis/load_json_data.dart';
+import 'package:project_dd/src/features/form/ui/economy_section.dart';
 import 'package:project_dd/src/features/form/ui/social_relogious_section.dart';
 
 class GeneralSection extends StatefulWidget {
@@ -42,8 +43,12 @@ class _GeneralSectionState extends State<GeneralSection> {
               updateState: () {
                 setState(() {});
               }),
-          CommonWidgets.save(context, () => widget.people.save(),
-              SocialReligious(people: widget.people)),
+          CommonWidgets.save(
+              context,
+              () => widget.people.save(),
+              (widget.people.gender.toLowerCase() == 'male')
+                  ? Economy(people: widget.people)
+                  : SocialReligious(people: widget.people)),
         ],
       ),
     );

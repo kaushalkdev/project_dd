@@ -16,7 +16,7 @@
         },
         "q1": {
             "name": "Type of family",
-            "isFemaleOnly": true,
+            "isFemaleOnly": false,
             "options": [
                 {
                     "val": "Nuclear",
@@ -30,7 +30,7 @@
         },
         "q2": {
             "name": "Age",
-            "isFemaleOnly": true,
+            "isFemaleOnly": false,
             "options": [
                 {
                     "val": "Below 18",
@@ -52,7 +52,7 @@
         },
         "q3": {
             "name": "Gender",
-            "isFemaleOnly": true,
+            "isFemaleOnly": false,
             "options": [
                 {
                     "val": "Male",
@@ -66,7 +66,7 @@
         },
         "q4": {
             "name": "Maritial Status",
-            "isFemaleOnly": true,
+            "isFemaleOnly": false,
             "options": [
                 {
                     "val": "Married",
@@ -88,7 +88,7 @@
         },
         "q5": {
             "name": "Number of childerns",
-            "isFemaleOnly": true,
+            "isFemaleOnly": false,
             "options": [
                 {
                     "val": "0",
@@ -114,7 +114,7 @@
         },
         "q6": {
             "name": "Number of girls",
-            "isFemaleOnly": true,
+            "isFemaleOnly": false,
             "options": [
                 {
                     "val": "0",
@@ -136,7 +136,7 @@
         },
         "q7": {
             "name": "Type of house",
-            "isFemaleOnly": true,
+            "isFemaleOnly": false,
             "options": [
                 {
                     "val": "Pucca",
@@ -158,7 +158,7 @@
         },
         "q8": {
             "name": "Access to toilet",
-            "isFemaleOnly": true,
+            "isFemaleOnly": false,
             "options": [
                 {
                     "val": "Yes",
@@ -172,7 +172,7 @@
         },
         "q9": {
             "name": "Type of toilet",
-            "isFemaleOnly": true,
+            "isFemaleOnly": false,
             "options": [
                 {
                     "val": "Dry",
@@ -190,7 +190,7 @@
         },
         "q10": {
             "name": "Source of light",
-            "isFemaleOnly": true,
+            "isFemaleOnly": false,
             "options": [
                 {
                     "val": "Electricity",
@@ -212,7 +212,7 @@
         },
         "q11": {
             "name": "Source of Cooking",
-            "isFemaleOnly": true,
+            "isFemaleOnly": false,
             "options": [
                 {
                     "val": "Electricity",
@@ -242,7 +242,7 @@
         },
         "q12": {
             "name": "Source of drinking",
-            "isFemaleOnly": true,
+            "isFemaleOnly": false,
             "options": [
                 {
                     "val": "Hand Pump",
