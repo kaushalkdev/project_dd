@@ -1,0 +1,128 @@
+{
+    "survey_list": [
+        {
+            "name": "",
+            "famity_type": "",
+            "age": 2,
+            "gender": "",
+            "marital_status": "",
+            "no_of_children": 0,
+            "no_of_girls": 0,
+            "house_type": "",
+            "toilet": "yes",
+            "toilet_type": [
+                "",
+                ""
+            ],
+            "light_source": [
+                "",
+                ""
+            ],
+            "cooking_source": [
+                "",
+                ""
+            ],
+            "drinking": [
+                "",
+                ""
+            ],
+            "worship_nature": "yes",
+            "whom_worship": [
+                "",
+                ""
+            ],
+            "sacrifice": "",
+            "cremate": "",
+            "prayers": "",
+            "what_prayers": [
+                ""
+            ],
+            "religious_ritual": "",
+            "birth_ceremoney": "yes",
+            "girls_birth_ceremoney": "yes",
+            "mensuration_restrictions": "",
+            "liquors_during_ceremoney": "",
+            "disease_treatment_practice": [
+                ""
+            ],
+            "visit_religious_place": "yes",
+            "gender_segg": "yes",
+            "family_speak_language": "",
+            "with_whom": [
+                ""
+            ],
+            "known_folk_songs": [
+                ""
+            ],
+            "celebration_ceremonies": [
+                ""
+            ],
+            "handicraft": "yes",
+            "marriage_outside_cast": "yes",
+            "punishment": "no",
+            "chores_hours": "",
+            "work": "",
+            "self": "",
+            "disease": [
+                ""
+            ],
+            "age_at_marrige": "",
+            "no_of_child": "",
+            "interval": [
+                ""
+            ],
+            "delivery_place": "",
+            "child_death": "",
+            "consult_doctors": "",
+            "medi_care": "",
+            "family_planning_method": [
+                ""
+            ],
+            "type_of_fp": [
+                ""
+            ],
+            "working": "",
+            "work_where": "",
+            "income": "",
+            "agri_land": "",
+            "bank_acc": "",
+            "bank_visit": "",
+            "use_atm": "",
+            "property": "",
+            "girl_work_outside_home": "",
+            "education_qual": "",
+            "reason": "",
+            "male_edu_more_imp": "",
+            "purpose_of_female_edu": [
+                ""
+            ],
+            "road_connectivity": "",
+            "smartphone": "",
+            "internet": "",
+            "use_of_internet": [
+                ""
+            ],
+            "affect_of_modernization":"",
+            "modern_clothes": "",
+            "other_language": "",
+            "which_lang": [
+                ""
+            ],
+            "learnt_where": [
+                ""
+            ],
+            "know_gov_schemes": "",
+            "which_one": [
+                ""
+            ],
+            "any_benifits": "",
+            "type_of_benifit": [
+                ""
+            ],
+            "satisfied": "",
+            "issues": [
+                ""
+            ]
+        }
+    ]
+}

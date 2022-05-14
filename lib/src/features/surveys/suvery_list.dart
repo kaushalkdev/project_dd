@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:intl/intl.dart';
 import 'package:project_dd/src/core/adapters/people_adapter.dart';
 import 'package:project_dd/src/core/services/constants.dart';
-import 'package:project_dd/src/core/widgets/common_widgets.dart';
+import 'package:project_dd/src/core/services/firebase_service.dart';
+import 'package:project_dd/src/core/services/locator.dart';
 import 'package:project_dd/src/features/form/ui/general_section.dart';
 import 'package:uuid/uuid.dart';
 
@@ -17,6 +17,7 @@ class SurveyLists extends StatefulWidget {
 }
 
 class _SurveyListsState extends State<SurveyLists> {
+  bool isUploading = false;
   @override
   void dispose() {
     super.dispose();
@@ -29,16 +30,51 @@ class _SurveyListsState extends State<SurveyLists> {
       appBar: AppBar(
         title: const Text('Previous Surveys'),
         centerTitle: true,
+        actions: [
+          GestureDetector(
+            child: const Icon(Icons.import_export),
+            onTap: () async {
+              isUploading = true;
+              setState(() {});
+              await Future.delayed(const Duration(seconds: 1));
+              Hive.box<People>(Constants.hiveBox).values.toList();
+              Hive.box<People>(Constants.hiveBox).values.forEach((people) {
+                // uploading data to firebase
+                getIt
+                    .get<FirebaseService>()
+                    .addPeople(people)
+                    .onError((error, stackTrace) {
+                  ScaffoldMessenger.of(context)
+                      .showSnackBar(SnackBar(content: Text(error.toString())));
+                });
+                // create a json file
+                // read the records people by people
+                // add the entries in the json file
+                // save it to phone_location or mail or whatever.
+              });
+              isUploading = false;
+              setState(() {});
+            },
+          )
+        ],
       ),
-      body: ValueListenableBuilder<Box<People>>(
-        valueListenable: Hive.box<People>(Constants.hiveBox).listenable(),
-        builder: (context, value, _) {
-          return value.isEmpty
-              ? const Center(
-                  child: Text('No surveys yet'),
-                )
-              : buildSurverys(value);
-        },
+      body: Stack(
+        children: [
+          ValueListenableBuilder<Box<People>>(
+            valueListenable: Hive.box<People>(Constants.hiveBox).listenable(),
+            builder: (context, value, _) {
+              return value.isEmpty
+                  ? const Center(
+                      child: Text('No surveys yet'),
+                    )
+                  : buildSurverys(value);
+            },
+          ),
+          if (isUploading)
+            const Center(
+              child: CircularProgressIndicator(),
+            )
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
@@ -221,7 +257,16 @@ class _SurveyListsState extends State<SurveyLists> {
                 style: const ButtonStyle(),
                 child: const Text('Delete'),
                 onPressed: () {
-                  value.deleteAt(index);
+                  getIt
+                      .get<FirebaseService>()
+                      .deletePerson(value.getAt(index)!)
+                      .then((_) {
+                    value.deleteAt(index);
+                  }).onError((error, stackTrace) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(content: Text(error.toString())));
+                  });
+
                   Navigator.of(context).pop();
                 },
               ),

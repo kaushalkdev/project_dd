@@ -8,14 +8,15 @@ class CommonWidgets {
     return SizedBox(
       width: 200,
       child: ElevatedButton(
-        onPressed: () async {
-          await save();
-          if (navigateHome) {
-            Navigator.popUntil(context, (route) => route.isFirst);
-          } else {
-            Navigator.push(
-                context, CupertinoPageRoute(builder: (context) => child));
-          }
+        onPressed: () {
+          save().then((_) {
+            if (navigateHome) {
+              Navigator.popUntil(context, (route) => route.isFirst);
+            } else {
+              Navigator.push(
+                  context, CupertinoPageRoute(builder: (context) => child));
+            }
+          });
         },
         child: const Text('Save'),
       ),
