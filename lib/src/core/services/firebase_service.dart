@@ -65,4 +65,9 @@ class FirebaseService {
       throw Exception("Unknown error please try  ${e.toString()}");
     }
   }
+
+  Future<List<QueryDocumentSnapshot>> getAllData() async {
+    var response = await _collectionReference.get();
+    return response.docs;
+  }
 }

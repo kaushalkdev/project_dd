@@ -1,7 +1,12 @@
+import 'dart:convert';
+import 'dart:developer';
+import 'dart:io';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:intl/intl.dart';
+import 'package:path_provider/path_provider.dart';
 import 'package:project_dd/src/core/adapters/people_adapter.dart';
 import 'package:project_dd/src/core/services/constants.dart';
 import 'package:project_dd/src/core/services/firebase_service.dart';
@@ -18,10 +23,122 @@ class SurveyLists extends StatefulWidget {
 
 class _SurveyListsState extends State<SurveyLists> {
   bool isUploading = false;
+  final List<String> userSurveyMapList = [];
   @override
   void dispose() {
     super.dispose();
     Hive.box(Constants.hiveBox).close();
+  }
+
+  getJsonFromQuerySnapshot() async {
+    Map<String, dynamic> userSurveyMap = {};
+    var response = await getIt.get<FirebaseService>().getAllData();
+
+    // sorted values
+    response.sort(((a, b) => (a["gender"] as String)
+        .length
+        .compareTo((b["gender"] as String).length)));
+
+    for (var element in response) {
+      var singleQuery = element.data() as Map;
+
+      userSurveyMap["name"] = singleQuery["name"];
+      userSurveyMap["gender"] = singleQuery["gender"];
+      userSurveyMap["location"] = singleQuery["location"];
+
+      for (var element in (singleQuery['economy'] as Map).entries) {
+        var options = element.value['options'] as List;
+        if (options.isNotEmpty) {
+          for (Map option in options) {
+            if (option["checked"]) {
+              userSurveyMap[element.value["name"]] = option["val"];
+            }
+          }
+        }
+      }
+
+      for (var element in (singleQuery['education'] as Map).entries) {
+        var options = element.value['options'] as List;
+        if (options.isNotEmpty) {
+          for (Map option in options) {
+            if (option["checked"]) {
+              userSurveyMap[element.value["name"]] = option["val"];
+            }
+          }
+        }
+      }
+      for (var element in (singleQuery['general'] as Map).entries) {
+        var options = element.value['options'] as List;
+        if (options.isNotEmpty) {
+          for (Map option in options) {
+            if (option["checked"]) {
+              userSurveyMap[element.value["name"]] = option["val"];
+            }
+          }
+        }
+      }
+      for (var element in (singleQuery['governmentSchemes'] as Map).entries) {
+        var options = element.value['options'] as List;
+        if (options.isNotEmpty) {
+          for (Map option in options) {
+            if (option["checked"]) {
+              userSurveyMap[element.value["name"]] = option["val"];
+            }
+          }
+        }
+      }
+      for (var element in (singleQuery['health'] as Map).entries) {
+        var options = element.value['options'] as List;
+        if (options.isNotEmpty) {
+          for (Map option in options) {
+            if (option["checked"]) {
+              userSurveyMap[element.value["name"]] = option["val"];
+            }
+          }
+        }
+      }
+      for (var element in (singleQuery['modernization'] as Map).entries) {
+        var options = element.value['options'] as List;
+        if (options.isNotEmpty) {
+          for (Map option in options) {
+            if (option["checked"]) {
+              userSurveyMap[element.value["name"]] = option["val"];
+            }
+          }
+        }
+      }
+      for (var element in (singleQuery['social'] as Map).entries) {
+        var options = element.value['options'] as List;
+        if (options.isNotEmpty) {
+          for (Map option in options) {
+            if (option["checked"]) {
+              userSurveyMap[element.value["name"]] = option["val"];
+            }
+          }
+        }
+      }
+
+      userSurveyMapList.add(jsonEncode(userSurveyMap));
+    }
+
+    final file = await _localFile;
+    file.writeAsString('$userSurveyMapList');
+  }
+
+  Future<String> get _localPath async {
+    final directory = await getExternalStorageDirectory();
+    return directory!.path;
+  }
+
+  Future<File> get _localFile async {
+    final path = await _localPath;
+    return File('$path/survery${DateTime.now()}.json');
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    getJsonFromQuerySnapshot();
   }
 
   @override
